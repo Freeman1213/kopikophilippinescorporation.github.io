@@ -1,0 +1,110 @@
+<html>
+	<title> 
+		Home | Kopiko Philippines Corporation
+	</title>
+	<head>
+	<link rel="stylesheet" href="Homepage.css">
+	</head>
+	<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">KOPIKO PHILIPPINES</a>
+ 
+</div>
+
+<div id="main">
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+ 	document.getElementById("menu").style.position = "static";
+
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+ 	document.getElementById("menu").style.position = "fixed";
+
+
+}
+</script>
+     
+				<div class = "menu" id = "menu">
+			<ul class = "ul">
+				<div class= "menutext">
+				<li class = "li"><span style="color:white;cursor:pointer;padding: 0px 20px 0px 0px;" onclick="openNav()">&#9776;</span></li>
+				<li class = "li"><a href = "index.html" class = "active">Home</a></li>
+				<li Class = "li"><a href = "#">Contact Us</a></li>
+				<li Class = "li"><a href = "Tables.html">Projects</a></li>
+				<li class = "drop"><a>Coffee Flavor</a>
+				<div class="dc">
+      				<a href="#">Blanca</a>
+      				<a href="#">Brown</a>
+     				<a href="#">Black</a>
+				</div>
+				</li>
+				</div>
+			</ul>
+		</div>	
+			
+		
+			<div class = "skylord">
+			
+			</div>
+			<div class = "footer">
+			Aj Maray the Web Developer | Copyright 2023<br>
+			All Rights Reserved
+			</div>
+	</div>
+	</body>
+</html>
